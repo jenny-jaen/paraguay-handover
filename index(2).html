@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>파라과이 사업 회계 담당자 업무 인수인계</title>
+  <style>
+    @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+    @import url('https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css');
+    :root{--ink:#19324a;--muted:#667789;--line:#dce5ec;--soft:#f4f8fb;--blue:#1f6696;--sky:#eaf4fa;--warn:#fff7e8;--warnline:#e6b85c;--ok:#edf7f2;--white:#fff;--pink:#fff1f3}*{box-sizing:border-box}body{margin:0;background:#eef3f7;color:var(--ink);font-family:Pretendard,"Noto Sans KR","Malgun Gothic",sans-serif;line-height:1.68}.page{max-width:1040px;margin:36px auto;background:var(--white);box-shadow:0 12px 40px rgba(24,53,77,.09);border-radius:20px;overflow:hidden}.hero{padding:52px 56px 42px;background:linear-gradient(135deg,#173f60,#287aa7);color:#fff}.eyebrow{font-size:13px;letter-spacing:.12em;opacity:.78}.hero h1{margin:10px 0 12px;font-size:34px;line-height:1.3}.hero p{margin:0;max-width:720px;color:rgba(255,255,255,.82)}.meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}.pill{padding:7px 12px;border:1px solid rgba(255,255,255,.3);border-radius:999px;font-size:13px}.content{padding:38px 56px 60px}.topic-nav{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:30px}.tab-button{text-align:left;color:var(--ink);border:1px solid var(--line);border-radius:14px;padding:15px 16px;background:var(--soft);font:inherit;cursor:pointer;transition:.18s ease}.tab-button:hover{transform:translateY(-1px);border-color:#9bbacd}.tab-button strong{display:block;color:var(--blue)}.tab-button span{font-size:12px;color:var(--muted)}.tab-button.active{background:var(--blue);border-color:var(--blue);box-shadow:0 8px 20px rgba(31,102,150,.18)}.tab-button.active strong,.tab-button.active span{color:#fff}.tab-button.active span{opacity:.82}.tab-panel{display:none}.tab-panel.active{display:block;animation:fade .22s ease}@keyframes fade{from{opacity:.25;transform:translateY(4px)}to{opacity:1;transform:none}}.welcome{padding:30px;background:linear-gradient(135deg,var(--pink),var(--warn));border:1px solid #f2dfe0;border-radius:18px;margin-bottom:26px}.welcome .hello{font-size:26px;margin:0 0 10px}.welcome p{margin:0;color:#5c5960}.directory{display:grid;grid-template-columns:1fr 1fr;gap:14px}.directory-card{border:1px solid var(--line);border-radius:15px;padding:20px;background:#fff}.directory-card .icon{font-size:24px}.directory-card h3{margin:5px 0 8px;font-size:17px}.directory-card p{margin:0 0 12px;color:var(--muted);font-size:14px}.chips{display:flex;flex-wrap:wrap;gap:6px}.chip{display:inline-block;border:0;background:var(--sky);color:var(--blue);border-radius:999px;padding:6px 10px;font-size:12px;cursor:pointer}.subnav{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}.subtab{border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:10px;padding:9px 13px;cursor:pointer}.subtab.active{background:var(--ink);color:#fff;border-color:var(--ink)}.subpanel{display:none}.subpanel.active{display:block}.allowance-subpanel,.report-subpanel{display:none}.allowance-subpanel.active,.report-subpanel.active{display:block}.manual-title{margin:24px 0 0;padding:28px 30px;background:linear-gradient(135deg,var(--sky),var(--soft));border:1px solid var(--line);border-radius:17px}.manual-title small{color:var(--blue);font-weight:700}.manual-title h2{font-size:27px;margin:4px 0 5px}.manual-title p{margin:0;color:var(--muted)}.placeholder{margin-top:24px;padding:42px 28px;text-align:center;border:1px dashed #afc0cc;border-radius:17px;background:var(--soft)}.placeholder .emoji{font-size:34px}.placeholder h2{margin:8px 0 4px}.placeholder p{margin:0;color:var(--muted)}.nav{display:flex;flex-wrap:wrap;gap:8px;padding:20px 0 4px}.nav a{text-decoration:none;color:var(--blue);background:var(--sky);padding:7px 11px;border-radius:9px;font-size:13px}.section{padding-top:40px;scroll-margin-top:20px}.section h2{font-size:22px;margin:0 0 18px;display:flex;align-items:center;gap:10px}.num{display:inline-grid;place-items:center;width:30px;height:30px;background:var(--blue);color:#fff;border-radius:9px;font-size:14px}.lead{font-size:17px}.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.box{background:var(--soft);border:1px solid var(--line);border-radius:14px;padding:19px 21px}.box h3{font-size:15px;margin:0 0 8px}.box p{margin:0;color:var(--muted)}ul{margin:0;padding-left:21px}li+li{margin-top:7px}.steps{counter-reset:step;display:grid;gap:12px}.step{counter-increment:step;display:grid;grid-template-columns:42px 1fr;gap:14px;padding:18px;border:1px solid var(--line);border-radius:14px}.step:before{content:counter(step);display:grid;place-items:center;width:34px;height:34px;background:var(--sky);color:var(--blue);font-weight:700;border-radius:50%}.step strong{display:block;margin-bottom:3px}.step span{color:var(--muted)}table{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--line);border-radius:14px;overflow:hidden}th,td{text-align:left;padding:14px 15px;border-bottom:1px solid var(--line);vertical-align:top}th{background:var(--soft);font-size:13px}tr:last-child td{border-bottom:0}.empty{color:#9a6a19;font-weight:600}.notice{background:var(--warn);border-left:4px solid var(--warnline);padding:18px 20px;border-radius:4px 12px 12px 4px}.template{position:relative;background:#162b3d;color:#edf6fc;border-radius:14px;padding:23px;white-space:pre-wrap}.copy{position:absolute;right:14px;top:14px;border:0;border-radius:8px;padding:7px 10px;background:#fff;color:#173f60;cursor:pointer}.checks{display:grid;grid-template-columns:1fr 1fr;gap:10px}.check{display:flex;align-items:flex-start;gap:10px;padding:13px 14px;border:1px solid var(--line);border-radius:11px;cursor:pointer}.check input{margin-top:5px;accent-color:var(--blue)}.calendar{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff}.calendar-head{display:grid;grid-template-columns:repeat(7,1fr);background:var(--ink);color:#fff;text-align:center}.calendar-head div{padding:10px 4px;font-size:13px}.calendar-grid{display:grid;grid-template-columns:repeat(7,1fr)}.day{min-height:105px;padding:9px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}.day:nth-child(7n){border-right:0}.day.muted{background:var(--soft);color:var(--muted)}.date{display:inline-grid;place-items:center;width:27px;height:27px;font-weight:500}.day.deadline{background:var(--sky)}.day.payday{background:var(--ok)}.day.deadline .date{background:var(--blue);color:#fff;border-radius:50%}.day.payday .date{background:#37785b;color:#fff;border-radius:50%}.event{display:block;margin-top:6px;padding:5px 6px;border-radius:7px;background:#fff;border:1px solid var(--line);font-size:11px;line-height:1.35;color:var(--ink)}.calendar-legend{display:flex;gap:14px;flex-wrap:wrap;margin:12px 0 0;color:var(--muted);font-size:13px}.legend-dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;background:var(--blue)}.legend-dot.pay{background:#37785b}.footer{margin-top:44px;padding-top:22px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}.actions{display:flex;gap:10px;margin-top:28px}.actions button{border:0;background:var(--blue);color:#fff;padding:10px 15px;border-radius:10px;cursor:pointer}.actions .secondary{background:var(--soft);color:var(--ink);border:1px solid var(--line)}@media(max-width:760px){.page{margin:0;border-radius:0}.hero,.content{padding:34px 22px}.hero h1{font-size:27px}.topic-nav{grid-template-columns:1fr 1fr}.directory,.info-grid,.checks{grid-template-columns:1fr}.step{grid-template-columns:36px 1fr}table{font-size:13px}.table-wrap{overflow-x:auto}.day{min-height:75px;padding:5px}.event{font-size:10px;padding:3px}.calendar-head div{font-size:11px}}@media(max-width:440px){.topic-nav{grid-template-columns:1fr}.calendar{overflow-x:auto}.calendar-head,.calendar-grid{min-width:620px}}@media print{body{background:#fff}.page{margin:0;max-width:none;box-shadow:none}.topic-nav,.nav,.subnav,.actions,.copy{display:none}.hero{background:#173f60!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}.tab-panel{display:none!important}.tab-panel.active{display:block!important}.section{break-inside:avoid}}
+    .hero h1,.welcome .hello,.manual-title h2,.placeholder h2,.section h2,.directory-card h3{font-family:SUIT,Pretendard,"Noto Sans KR","Malgun Gothic",sans-serif;font-weight:700;letter-spacing:-.025em}
+    .hero h1{font-weight:800}
+  </style>
+</head>
+<body>
+<main class="page">
+  <header class="hero">
+    <div class="eyebrow">PARAGUAY PROJECT · 업무 인수인계</div>
+    <h1>파라과이 사업 회계 담당자<br>업무 인수인계</h1>
+    <p>파라과이 사업의 회계·행정 업무를 후임자가 실제 처리 순서에 따라 수행할 수 있도록 업무별 절차와 확인사항을 정리했습니다.</p>
+    <div class="meta"><span class="pill">전체 업무 분야: 4개</span><span class="pill">구조 예시 화면</span><span class="pill">최종 수정일: 2026. 7. 13.</span></div>
+  </header>
+  <div class="content">
+    <div class="topic-nav" role="tablist" aria-label="업무 분야 선택">
+      <button class="tab-button active" type="button" role="tab" aria-selected="true" aria-controls="overview-panel" onclick="showTab('overview-panel',this)"><strong>🏠 전체 업무 안내</strong><span>목차를 한눈에 확인해요</span></button>
+      <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="expert-panel" onclick="showTab('expert-panel',this)"><strong>✈️ 전문가 출장·파견</strong><span>항공권·접종·체재비·보험·물품</span></button>
+      <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="accounting-panel" onclick="showTab('accounting-panel',this)"><strong>🧾 지출·회계자료 정리</strong><span>지출·해외매출·엑셀·전표</span></button>
+      <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="local-panel" onclick="showTab('local-panel',this)"><strong>💳 현지 지출</strong><span>현금건·카드건 처리</span></button>
+      <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="report-panel" onclick="showTab('report-panel',this)"><strong>📊 예산·일정 관리</strong><span>보고서 예산·일정 리마인드</span></button>
+    </div>
+
+    <div class="tab-panel active" id="overview-panel" role="tabpanel">
+      <div class="welcome"><p class="hello">선생님들, 안녕하세요! 👋</p><p>파라과이 사업의 회계·행정 업무를 조금 더 편하게 확인하실 수 있도록 업무별 처리 방법을 정리해 두었습니다.<br>실제 업무를 진행할 때 헷갈리기 쉬운 부분과 꼭 확인해야 할 사항도 함께 담을 예정이니, 필요한 업무를 선택하여 확인해 주세요!<br><br><strong>그동안 함께해 주셔서 정말 감사드리고, 앞으로도 잘 부탁드립니다!! 😊</strong></p></div>
+      <div class="directory">
+        <article class="directory-card"><div class="icon">✈️</div><h3>전문가 출장·파견</h3><p>전문가의 출장과 파견 준비부터 현지에 가져갈 물품 구매까지 함께 정리합니다.</p><div class="chips"><button class="chip" onclick="openCategory('expert-panel',1)">항공권 발권</button><button class="chip" onclick="openCategory('expert-panel',2)">황열 예방접종</button><button class="chip" onclick="openCategory('expert-panel',3)">체재비 지급</button><button class="chip" onclick="openCategory('expert-panel',4)">보험 가입</button><button class="chip" onclick="openCategory('expert-panel',5)">지참 물품 구매</button></div></article>
+        <article class="directory-card"><div class="icon">🧾</div><h3>지출·회계자료 정리</h3><p>국내·현지 지출을 포함한 전체 집행내역과 회계자료의 공통 정리 절차를 안내합니다.</p><div class="chips"><button class="chip" onclick="openCategory('accounting-panel')">지출 처리</button><button class="chip" onclick="openCategory('accounting-panel')">해외매출</button><button class="chip" onclick="openCategory('accounting-panel')">엑셀 정리</button><button class="chip" onclick="openCategory('accounting-panel')">전표 정리</button></div></article>
+        <article class="directory-card"><div class="icon">💳</div><h3>현지 지출</h3><p>파라과이 현지에서 발생한 지출 건의 처리 방법을 구분해 안내합니다.</p><div class="chips"><button class="chip" onclick="openCategory('local-panel')">현금건</button><button class="chip" onclick="openCategory('local-panel')">카드건</button></div></article>
+        <article class="directory-card"><div class="icon">📊</div><h3>예산·일정 관리</h3><p>보고서 예산 작성과 정기적으로 확인할 일정을 모아둡니다.</p><div class="chips"><button class="chip" onclick="openCategory('report-panel')">보고서 예산</button><button class="chip" onclick="openCategory('report-panel')">일정 리마인드</button></div></article>
+      </div>
+    </div>
+
+    <div class="tab-panel" id="expert-panel" role="tabpanel">
+      <div class="subnav" role="tablist" aria-label="전문가 출장·파견 세부 업무"><button class="subtab active" onclick="showSubtab('flight-panel',this)">항공권 발권</button><button class="subtab" onclick="showSubtab('yellow-panel',this)">황열 예방접종</button><button class="subtab" onclick="showSubtab('allowance-panel',this)">체재비 지급</button><button class="subtab" onclick="showSubtab('insurance-panel',this)">보험 가입</button><button class="subtab" onclick="showSubtab('travel-goods-panel',this)">지참 물품 구매</button></div>
+    <div class="subpanel active" id="flight-panel">
+    <div class="manual-title" id="flight"><small>업무 01 · 전문가 출장·파견</small><h2>항공권 발권 및 지출 처리</h2><p>레드캡투어 견적 요청부터 예약·발권, 증빙 수령, 전표 처리까지</p></div>
+    <nav class="nav" aria-label="항공권 발권 목차"><a href="#flight-overview">업무 개요</a><a href="#flight-contacts">연락처</a><a href="#flight-process">발권 절차</a><a href="#flight-payment">결제·증빙</a><a href="#flight-voucher">전표 처리</a><a href="#flight-business">비즈니스석</a><a href="#flight-message">견적 문안</a><a href="#flight-checklist">체크리스트</a></nav>
+
+    <section class="section" id="flight-overview"><h2><span class="num">1</span>업무 개요</h2><p class="lead">전문가의 출장 일정과 좌석 등급을 확인하여 레드캡투어에 견적을 요청하고, 내부 관계자와 PM의 최종 확인 후 발권합니다. 항공권 전달뿐 아니라 결제 증빙 수령과 사업비 전표 처리까지 완료해야 업무가 종료됩니다.</p><div class="info-grid"><div class="box"><h3>현재 계약업체</h3><p>㈜레드캡투어<br>계약기간: 2026. 6. 15.~2028. 12. 31.</p></div><div class="box"><h3>업무 완료 기준</h3><p>발권, 전문가 전달, 견적서·항공권·인보이스·영수증 수령, 전표 처리 및 관련 승인자료 보관까지 완료</p></div></div></section>
+
+    <section class="section" id="flight-contacts"><h2><span class="num">2</span>레드캡투어 연락처</h2><div class="table-wrap"><table><thead><tr><th>구분</th><th>담당자</th><th>연락처</th><th>이메일</th></tr></thead><tbody><tr><td>항공 주 담당</td><td>김정옥 선임</td><td>02-2139-2839</td><td>gtr2@redcap.co.kr</td></tr><tr><td>항공 부 담당</td><td>정나은 선임</td><td>02-2139-2777</td><td>nejung@redcap.co.kr</td></tr><tr><td>근무시간 외 긴급지원</td><td>ETS 긴급콜센터</td><td>02-3296-5500</td><td>야간·주말·공휴일 이용</td></tr></tbody></table></div><div class="notice" style="margin-top:14px"><strong>근무시간</strong> 평일 09:00~18:00. 근무시간 외 항공편 변경·결항 등 긴급상황은 ETS 긴급콜센터로 연락합니다.</div></section>
+
+    <section class="section" id="flight-process"><h2><span class="num">3</span>견적·예약·발권 순서</h2><div class="steps">
+      <div class="step"><div><strong>출장 일정과 좌석 등급 확인</strong><span>출장자 수, 출국일·귀국일, 출발지·도착지, 이코노미/비즈니스 여부, 일정 조정 가능 범위와 제외할 항공사를 확인합니다.</span></div></div>
+      <div class="step"><div><strong>레드캡투어에 견적 요청</strong><span>항공 담당자에게 일정과 좌석 등급을 전달합니다. 미국 경유는 수하물을 찾아 다시 부치는 등의 이슈가 있어 가능한 한 제외합니다.</span></div></div>
+      <div class="step"><div><strong>견적 금액과 여정 검토</strong><span>이코노미석은 약 550만 원 이하, 비즈니스석은 약 1,000만 원 이하를 내부 참고금액으로 봅니다. 비즈니스석은 약 800만 원 수준으로 진행한 이력이 있습니다. 금액뿐 아니라 경유지·경유시간·수하물·변경 및 환불 조건도 확인합니다.</span></div></div>
+      <div class="step"><div><strong>본부장·팀장 등 내부 공유</strong><span>출장자, 일정, 항공사, 좌석 등급, 항공료, 발권수수료와 발권시한을 공유하여 내부 의견을 확인합니다.</span></div></div>
+      <div class="step"><div><strong>예약 요청과 여권 사본 전달</strong><span>선택한 항공편의 예약을 요청하며 출장자 여권 사본을 전달합니다. 영문 성명과 여권정보가 정확히 반영됐는지 확인합니다.</span></div></div>
+      <div class="step"><div><strong>발권시한 확인</strong><span>여행사가 안내한 발권시한을 확인하고 내부 관계자와 PM에게 공유합니다. 시한이 지나면 예약이 취소되거나 운임이 변동될 수 있습니다.</span></div></div>
+      <div class="step"><div><strong>PM 최종 확인 후 발권</strong><span>예약된 항공편과 최종 금액을 PM과 확정한 뒤 레드캡투어에 발권을 요청합니다.</span></div></div>
+      <div class="step"><div><strong>발권 항공권 확인·전달</strong><span>영문 성명, 일정, 좌석 등급과 금액을 확인한 후 전문가에게 전달합니다. 좌석 지정과 마일리지 등록은 여행사에서 하지 않으므로 전문가가 직접 진행합니다.</span></div></div>
+    </div></section>
+
+    <section class="section"><h2><span class="num">4</span>발권수수료 확인</h2><div class="info-grid"><div class="box"><h3>국제선 발권수수료</h3><p>항공권 금액의 2.75%<br>항공권 1건당 최대 120,000원</p></div><div class="box"><h3>변경·환불 시</h3><p>새 티켓번호가 생성되고 추가 비용이 발생하면 수수료가 다시 청구될 수 있으며, 기존 발권수수료는 환불되지 않습니다.</p></div></div></section>
+
+    <section class="section" id="flight-payment"><h2><span class="num">5</span>결제 및 필수 증빙</h2><p class="lead">파라과이 항공료는 금액이 커 카드결제가 어려운 경우가 많으므로 일반적으로 현금결제 후 현금영수증을 발급받습니다. 발권수수료는 항공료와 별도로 카드결제해도 무방합니다.</p><div class="notice"><strong>현금영수증 또는 세금계산서 발급이 불가능한 경우</strong><br>증빙 없이 큰 금액을 현금으로 처리할 수 없습니다. 결제 전에 재무와 협의하여 재무 카드를 빌리고 한도를 증액한 후 결제합니다. 파라과이 사업비 카드 한도는 1,500만 원이며, 재무는 필요 시 한도를 증액할 수 있습니다. 결제 후에는 바로 사업비 전표를 처리합니다.</div><div class="box" style="margin-top:14px"><h3>여행사에서 반드시 받아야 하는 서류</h3><ul><li>견적서</li><li>최종 발권 항공권(E-ticket)</li><li>인보이스</li><li>현금영수증 또는 카드매출전표</li><li>발권수수료 인보이스 및 영수증</li><li>필요 시 이코노미석 비교견적과 업그레이드 관련 서류</li></ul></div></section>
+
+    <section class="section" id="flight-voucher"><h2><span class="num">6</span>지출 및 전표 처리</h2><div class="table-wrap"><table><thead><tr><th>결제·집행 방식</th><th>전표 수</th><th>전표 구분</th></tr></thead><tbody><tr><td>항공료 현금 + 발권수수료 카드</td><td>2개</td><td>① 항공료 ② 발권수수료</td></tr><tr><td>항공료와 발권수수료를 같은 카드로 결제</td><td>1개 가능</td><td>한 전표 안에서 항공료와 수수료를 구분</td></tr><tr><td>이코노미 직접경비 + 업그레이드 별도 + 수수료</td><td>3개</td><td>① 이코노미 항공료 ② 업그레이드 비용 ③ 발권수수료</td></tr></tbody></table></div><div class="notice" style="margin-top:14px"><strong>에티오피아 사업 발권사례 확인</strong><br>에티오피아 사업에서 레드캡투어를 통해 항공권을 발권한 이력이 있으므로, 실제 진행 전 <strong>혜린 팀장님께 결제·증빙·전표 처리방식을 확인하고 관련 내용을 공유받아</strong> 진행하는 것이 좋습니다.</div><div class="box" style="margin-top:14px"><h3>참고 가능한 전표 적요</h3><p><code>[카드][파라과이](전문가)항공료_전문가 9차출장자 항공료(변지나) 외 6건</code><br>해당 적요의 전표를 참고하여 지출 처리를 진행합니다.</p></div><div class="info-grid" style="margin-top:14px"><div class="box"><h3>공통 첨부서류</h3><ul><li>파견 제반비용 기안</li><li>파견 기안</li><li>파견계획서</li><li>견적서·항공권·인보이스</li><li>현금영수증 또는 카드매출전표</li><li>레드캡투어 통장 사본</li><li>레드캡투어 사업자등록증</li><li>여행사 수령서류 일체</li></ul></div><div class="box"><h3>추가 첨부서류</h3><ul><li>KOICA 확인 또는 승인 메일 <span style="color:var(--muted)">(전표에는 포함하지 않아도 되나 추후 정산을 위해 필요한 자료)</span></li><li>출장여비 지급 승인 요청 공문</li><li>이코노미 비교견적</li><li>업그레이드 견적·영수증·최종 항공권</li></ul></div></div></section>
+
+    <section class="section" id="flight-business"><h2><span class="num">7</span>비즈니스석 및 업그레이드 특이사항</h2><div class="box"><h3>비즈니스석 전액을 제경비로 처리</h3><p>KOICA에서 제경비 집행을 명확히 확인한 경우 일반 발권 절차와 동일하게 진행합니다. KOICA 확인 메일과 필요한 승인 공문을 전표 증빙에 포함합니다.</p></div><div class="box" style="margin-top:14px"><h3>이코노미 직접경비 + 업그레이드 비용 별도 처리</h3><p>이코노미석 견적·영수증·항공권과 업그레이드 비용 견적·영수증·항공권을 구분하여 받습니다. 최종 업그레이드된 항공권은 전문가에게 전달합니다. 전표는 이코노미 항공료, 업그레이드 비용, 발권수수료의 3건으로 구분합니다.</p></div><div class="notice" style="margin-top:14px"><strong>KOICA 확인 필수</strong><br>제경비로 업그레이드하는 것이 가능한지, 또는 전문가가 개인 비용으로 업그레이드해도 문제가 없는지 발권 전에 이메일로 확인받아야 합니다. 제경비 업그레이드 시에는 행정에서 <strong>출장여비 지급 승인 요청 공문</strong>을 작성하고 해당 공문을 전표 증빙에 함께 첨부합니다. 개인 비용만 허용된 경우에는 사업비 전표 처리 여부와 비목을 KOICA 회신 및 재무 확인에 따라 결정합니다.</div></section>
+
+    <section class="section" id="flight-message"><h2><span class="num">8</span>레드캡투어 견적 요청문</h2><div class="template" id="messageText"><button class="copy" type="button" onclick="copyMessage()">문구 복사</button>안녕하세요. 국제개발혁신연구소 정재은입니다.
+
+파라과이 사업 전문가 출장과 관련하여 아래 일정으로 항공권 견적을 요청드립니다.
+
+출장자: ○명
+출국일: ○월 ○일
+귀국일: ○월 ○일
+구간: 인천 ↔ 파라과이 아순시온
+좌석 등급: ○○석
+기타 요청사항: 미국 경유 제외 / 일정 조정 가능 범위 등
+
+가능한 항공편과 함께 운임, 발권수수료, 발권시한, 위탁수하물 및 변경·취소 조건을 확인하여 전달 부탁드립니다.
+
+감사합니다.</div></section>
+
+    <section class="section" id="flight-checklist"><h2><span class="num">9</span>업무 완료 체크리스트</h2><div class="checks"><label class="check"><input type="checkbox">레드캡투어 견적 요청</label><label class="check"><input type="checkbox">좌석 등급별 참고금액 확인</label><label class="check"><input type="checkbox">발권수수료 확인</label><label class="check"><input type="checkbox">본부장·팀장 등 내부 공유</label><label class="check"><input type="checkbox">예약 요청 및 여권 사본 전달</label><label class="check"><input type="checkbox">영문 성명·일정·발권시한 확인</label><label class="check"><input type="checkbox">PM 최종 확인</label><label class="check"><input type="checkbox">결제 및 발권 완료</label><label class="check"><input type="checkbox">견적서·항공권·인보이스·영수증 수령</label><label class="check"><input type="checkbox">전문가에게 항공권 전달</label><label class="check"><input type="checkbox">사업비 전표 처리 완료</label><label class="check"><input type="checkbox">전표 정리 및 엑셀 정리</label></div><div class="actions"><button type="button" onclick="window.print()">인쇄·PDF 저장</button><button class="secondary" type="button" onclick="resetChecks()">체크 초기화</button></div></section>
+    </div>
+    <div class="subpanel" id="yellow-panel">
+      <div class="manual-title"><small>업무 02 · 전문가 출장·파견</small><h2>황열 예방접종 및 지출 처리</h2><p>신규 전문가 접종 안내부터 증빙 수령, 전표 처리까지</p></div>
+      <nav class="nav" aria-label="황열 예방접종 목차"><a href="#yellow-overview">업무 개요</a><a href="#yellow-guide">전문가 안내</a><a href="#yellow-docs">제출서류</a><a href="#yellow-voucher">전표 처리</a><a href="#yellow-message">안내 문안</a><a href="#yellow-checklist">체크리스트</a></nav>
+
+      <section class="section" id="yellow-overview"><h2><span class="num">1</span>업무 개요</h2><p class="lead">파라과이 파견 예정 전문가의 황열 예방접종 여부를 확인하고, 미접종자에게 출장 최소 10일 전까지 접종하도록 안내합니다. 접종 후 제출받은 증빙을 확인하여 사업운영비로 지출 처리합니다.</p><div class="info-grid"><div class="box"><h3>접종 시기</h3><p>출장 최소 10일 전까지 접종을 완료하도록 안내합니다.</p></div><div class="box"><h3>접종 방법</h3><p>전문가가 거주지 인근의 황열 예방접종 가능 병원을 확인하여 방문하고, 접종카드(Yellow Card)를 반드시 발급받습니다.</p></div></div></section>
+
+      <section class="section" id="yellow-guide"><h2><span class="num">2</span>결제 및 현금영수증 안내</h2><p class="lead">접종비는 현금으로 결제하고, 반드시 한동대학교 산학협력단 사업자등록번호로 현금영수증을 발급받아야 합니다.</p><div class="notice"><strong>현금영수증 발급정보</strong><br>발급처: 한동대학교 산학협력단<br>사업자등록번호: <strong>506-82-07282</strong><br><br><strong>현금영수증을 발급받지 않으면 비용 지급이 불가능합니다.</strong></div><div class="box" style="margin-top:14px"><h3>전문가 안내 시 꼭 강조할 내용</h3><p>개인 휴대전화 번호나 다른 사업자번호로 현금영수증을 발급받지 않도록 안내합니다. <strong>현금영수증을 발급받아야 하므로 접종비는 반드시 현금으로 결제해야 합니다.</strong> 이전에 증빙을 잘못 처리하여 전문가가 병원을 다시 방문한 사례가 있으므로, 해당 내용을 강조하여 안내해야 합니다. 결제 전 병원에 사업자등록번호를 정확히 전달하고, 발급된 현금영수증의 사업자번호를 현장에서 바로 확인하도록 안내합니다.</p></div></section>
+
+      <section class="section" id="yellow-docs"><h2><span class="num">3</span>제출 및 첨부서류</h2><div class="info-grid"><div class="box"><h3>전문가에게 받을 서류</h3><ul><li>정부수입인지 영수증 <span style="color:var(--muted)">(현금영수증 발급 대상 아님)</span></li><li>진료비 확인서</li><li>접종비 현금영수증</li><li>황열 예방접종서 또는 접종카드(Yellow Card)</li></ul></div><div class="box"><h3>전표 첨부서류</h3><ul><li>정부수입인지 영수증</li><li>현금영수증</li><li>황열 예방접종서</li><li>파견 제반비용 기안</li><li>전문가 신분증</li><li>전문가 통장 사본</li></ul></div></div><div class="notice" style="margin-top:14px"><strong>증빙 확인</strong><br>현금영수증의 사업자등록번호가 <strong>506-82-07282</strong>로 정확히 발급되었는지 반드시 확인합니다. 정부수입인지는 현금영수증 발급 대상이 아니므로 수입인지 영수증 자체를 증빙으로 사용합니다.</div></section>
+
+      <section class="section" id="yellow-voucher"><h2><span class="num">4</span>지출 및 전표 처리</h2><div class="box"><h3>참고 가능한 전표 적요</h3><p><code>[파라과이]사업운영비_전문가7차파견 준비지원_황열 예방접종 정부수입인지비용(홍성백)</code><br>해당 적요의 전표를 참고하여 지출 처리를 진행합니다.</p></div><div class="table-wrap" style="margin-top:14px"><table><thead><tr><th>전표 입력 줄</th><th>지출 내용</th><th>증빙</th></tr></thead><tbody><tr><td>1줄</td><td>황열 예방접종 진료비</td><td>현금영수증</td></tr><tr><td>2줄</td><td>정부수입인지 비용</td><td>정부수입인지 영수증</td></tr></tbody></table></div><p style="color:var(--muted)">현금영수증 금액과 정부수입인지 금액을 구분하여 전표에 총 2줄로 입력합니다.</p></section>
+
+      <section class="section" id="yellow-message"><h2><span class="num">5</span>전문가 안내 문안</h2><div class="template">황열 예방접종
+
+- 접종일시: 출장 최소 10일 전
+- 접종방법: 거주지 근처의 접종 가능 병원을 확인하여 방문해 주세요. 접종카드(Yellow Card)는 반드시 발급받아 주시기 바랍니다.
+- 결제방법: 현금으로 결제하고, 한동대학교 산학협력단 앞으로 현금영수증을 반드시 발급받아 주세요.
+  · 사업자등록번호: 506-82-07282
+  · 현금영수증 미발급 시 비용 지급이 불가능합니다.
+- 제출서류
+  · 정부수입인지 영수증(현금영수증 발급 대상 아님)
+  · 진료비 확인서
+  · 현금영수증 스캔본
+  · 황열 예방접종서 또는 접종카드(Yellow Card)
+
+※ 결제 전 병원에 위 사업자등록번호를 정확히 전달하고, 발급된 현금영수증의 번호를 현장에서 꼭 확인해 주세요.</div></section>
+
+      <section class="section" id="yellow-checklist"><h2><span class="num">6</span>업무 완료 체크리스트</h2><div class="checks"><label class="check"><input type="checkbox">신규 전문가 접종 여부 확인 및 안내</label><label class="check"><input type="checkbox">증빙서류 받기</label><label class="check"><input type="checkbox">전표 처리</label></div><div class="actions"><button type="button" onclick="window.print()">인쇄·PDF 저장</button><button class="secondary" type="button" onclick="resetChecks()">체크 초기화</button></div></section>
+    </div>
+    <div class="subpanel" id="allowance-panel">
+      <div class="manual-title" id="allowance"><small>업무 03 · 전문가 출장·파견</small><h2>전문가 체재비 지급</h2><p>단기파견자와 장기파견자의 지급방법을 구분하여 확인합니다.</p></div>
+      <div class="subnav" aria-label="체재비 지급 유형"><button class="subtab active" type="button" onclick="showAllowanceTab('short-allowance',this)">단기파견자 체재비</button><button class="subtab" type="button" onclick="showAllowanceTab('long-allowance',this)">장기파견자 체재비</button></div>
+
+      <div class="allowance-subpanel active" id="short-allowance">
+        <nav class="nav" aria-label="단기파견자 체재비 목차"><a href="#short-file">파일 열기</a><a href="#short-calc">금액 산정</a><a href="#short-stay">숙박일수</a><a href="#short-voucher">전표 처리</a><a href="#short-docs">증빙서류</a><a href="#short-checklist">체크리스트</a></nav>
+
+        <section class="section" id="short-file"><h2><span class="num">1</span>체재비 계산파일 열기</h2><p class="lead">드롭박스에서 기존 체재비 및 인건비 계산파일을 열고, 체재비 시트를 복사하여 이번 파견용 시트를 새로 생성합니다.</p><div class="box"><h3>파일 위치</h3><p><code>D:\Dropbox\내 드라이브\1. HGD&amp;E (실무자)\3. 국제개발혁신연구소 업무\2. 파라과이\5. 행정\2. 전문가출장\5. 체재비 및 인건비 계산</code></p><p style="margin-top:8px">파일명: <strong>(파라과이) 출장자 체재비 및 인건비</strong></p></div><div class="steps" style="margin-top:14px"><div class="step"><div><strong>체재비 시트 복사</strong><span>기존 체재비 시트를 복사하여 새로운 시트를 생성합니다.</span></div></div><div class="step"><div><strong>전문가 이름 입력</strong><span>이름을 입력하면 직책과 등급은 자동으로 작성됩니다. 자동 입력된 내용이 맞는지 확인합니다.</span></div></div></div></section>
+
+        <section class="section" id="short-calc"><h2><span class="num">2</span>체재비 산정정보 입력</h2><div class="table-wrap"><table><thead><tr><th>입력항목</th><th>작성 및 확인방법</th></tr></thead><tbody><tr><td>출장기간</td><td>파견계획과 항공권을 확인하여 입력</td></tr><tr><td>일비·식비·숙박비</td><td>전문가 직급과 등급에 따라 자동 적용된 단가 확인</td></tr><tr><td>파견일수</td><td>전체 출장기간을 기준으로 작성</td></tr><tr><td>숙박일수</td><td>파라과이 현지에서 실제 숙박하는 날을 기준으로 작성</td></tr><tr><td>환율</td><td><strong>1,380원</strong>으로 입력</td></tr><tr><td>특이사항</td><td>항공숙박으로 제외하는 박수와 전문가별 차이를 구체적으로 작성</td></tr><tr><td>일비 차감</td><td>공용차량 또는 임차차량 이용 시 일비 1/2 차감 여부 확인</td></tr></tbody></table></div></section>
+
+        <section class="section" id="short-stay"><h2><span class="num">3</span>숙박일수 계산</h2><p class="lead">숙박일수는 전체 파견일수가 아니라 파라과이 현지에서 실제로 숙박하는 날을 기준으로 계산합니다.</p><div class="notice"><strong>항공권을 보면서 직접 계산</strong><br>통상 파견일수보다 숙박일수가 약 3박 적은 경우가 많지만 항공 일정에 따라 달라질 수 있습니다. 파라과이 현지 도착일부터 파라과이를 떠나는 날까지 실제 숙박일수를 세어 입력합니다.</div><div class="box" style="margin-top:14px"><ul><li>항공 이동 중 숙박은 현지 숙박일수에서 제외합니다.</li><li>타국에서 파라과이로 출장 오는 전문가도 있으므로 파견일수와 숙박일수가 반드시 같지는 않습니다.</li><li>항공 일정이 전문가별로 다르면 숙박일수와 특이사항도 전문가별로 다르게 작성합니다.</li><li>특이사항에는 항공숙박으로 몇 박을 제외했는지 기록합니다.</li></ul></div></section>
+
+        <section class="section" id="short-voucher"><h2><span class="num">4</span>PDF 추출 및 전표 처리</h2><div class="steps"><div class="step"><div><strong>체재비 시트 PDF 추출</strong><span>엑셀 입력과 계산 결과를 최종 확인한 후 해당 시트만 PDF로 추출합니다.</span></div></div><div class="step"><div><strong>일반청구로 전표 작성</strong><span>체재비는 인건비성 청구가 아닌 일반청구로 처리합니다. 사용일은 실제 입금일로 작성합니다.</span></div></div><div class="step"><div><strong>계좌정보 재확인</strong><span>기존 전문가 대부분의 계좌정보는 시스템에 등록되어 있으나, 예금주와 계좌번호를 지급 전에 반드시 다시 확인합니다.</span></div></div></div><div class="box" style="margin-top:14px"><h3>참고 가능한 전표 적요</h3><p><code>[파라과이](전문가)체재비_전문가 9차파견 체재비 지급 (변지나) 외 3건</code><br>해당 적요의 기존 전표를 참고하여 지출 처리를 진행합니다.</p></div></section>
+
+        <section class="section" id="short-docs"><h2><span class="num">5</span>전표 첨부서류</h2><div class="info-grid"><div class="box"><h3>필수 증빙</h3><ul><li>체재비 계산 엑셀시트 추출 PDF</li><li>전문가 신분증</li><li>전문가 통장 사본</li><li>항공권</li><li>파견 제반비용 기안</li><li>파견계획서 국문본</li></ul></div><div class="box"><h3>해당 시 추가</h3><ul><li>기안에 신규 전문가명이 없는 경우 전문가 투입보고 기안</li><li>일정 변경 등이 있는 경우 관련 확인자료</li></ul></div></div><div class="notice" style="margin-top:14px"><strong>신분증·통장 사본 정리</strong><br>신분증과 통장 사본 이미지를 Word 파일에 넣어 1~2페이지 안에 보기 좋게 배치한 후 PDF로 추출합니다. 기존 체재비 전표의 첨부파일을 확인하면 정리형식을 참고할 수 있습니다.</div></section>
+
+        <section class="section" id="short-checklist"><h2><span class="num">6</span>업무 완료 체크리스트</h2><div class="checks"><label class="check"><input type="checkbox">체재비 지급금액 확인 <strong>(숙박일수·파견일수 여명–수민 더블체크)</strong></label><label class="check"><input type="checkbox">계좌정보 확인</label><label class="check"><input type="checkbox">체재비 지급일정 확인</label><label class="check"><input type="checkbox">전표 처리</label></div><div class="actions"><button type="button" onclick="window.print()">인쇄·PDF 저장</button><button class="secondary" type="button" onclick="resetChecks()">체크 초기화</button></div></section>
+      </div>
+
+      <div class="allowance-subpanel" id="long-allowance">
+        <nav class="nav" aria-label="장기파견자 체재비 목차"><a href="#long-file">파일 열기</a><a href="#long-calc">금액 산정</a><a href="#long-voucher">전표 처리</a><a href="#long-docs">증빙서류</a><a href="#long-deadline">지급일정</a><a href="#long-checklist">체크리스트</a></nav>
+        <section class="section" id="long-file"><h2><span class="num">1</span>체재비 계산파일 열기</h2><div class="box"><h3>파일 위치</h3><p><code>D:\Dropbox\내 드라이브\1. HGD&amp;E (실무자)\3. 국제개발혁신연구소 업무\2. 파라과이\5. 행정\3. 장기파견\체재비 및 인건비 계산</code></p><p style="margin-top:8px">파일명: <strong>[파라과이] FM.PAO 체재비 및 인건비 계산</strong></p></div></section>
+        <section class="section" id="long-calc"><h2><span class="num">2</span>2개월분 체재비 계산</h2><div class="steps"><div class="step"><div><strong>가장 최근 시트 복사</strong><span>FM과 PAO의 가장 최근 시트를 각각 복사합니다.</span></div></div><div class="step"><div><strong>FM·PAO 시트 각각 생성</strong><span>지급대상 2개월에 맞춰 FM과 PAO 시트를 각각 작성합니다.</span></div></div><div class="step"><div><strong>월별 일수 변경</strong><span>예: 9~10월 체재비는 각 월에 맞게 30일과 31일로 변경합니다.</span></div></div><div class="step"><div><strong>PDF 추출</strong><span>계산결과를 확인한 후 FM과 PAO 시트를 각각 PDF로 추출합니다.</span></div></div></div><div class="notice" style="margin-top:14px"><strong>지급단위</strong><br>장기파견자 체재비는 2개월분을 한 번에 지급합니다. 월별 일수가 30일인지 31일인지 반드시 확인하여 시트에 반영합니다.</div></section>
+        <section class="section" id="long-voucher"><h2><span class="num">3</span>전표 처리</h2><p class="lead">FM·PAO 시트를 각각 PDF로 추출한 후 바로 전표 처리를 진행합니다.</p><div class="box"><h3>참고 가능한 전표 적요</h3><p><code>[파라과이](전문가)체재비_장기파견(26년 7월-8월) 체재비지급(차혜인 PAO) 외 1건</code><br>해당 적요의 기존 전표를 참고하여 지출 처리를 진행합니다.</p></div></section>
+        <section class="section" id="long-docs"><h2><span class="num">4</span>전표 첨부서류</h2><div class="info-grid"><div class="box"><h3>필수 증빙</h3><ul><li>FM 체재비 계산시트 PDF</li><li>PAO 체재비 계산시트 PDF</li><li>167번 기안: 장기파견자 체재비 지급계획안</li><li>7번 기안: 체재비 비과세처리 협조요청</li></ul></div><div class="box"><h3>제외서류</h3><p>장기파견자는 우리 사업 참여인력으로 등록되어 있으므로 신분증과 통장 사본은 첨부하지 않아도 됩니다.</p></div></div></section>
+        <section class="section" id="long-deadline"><h2><span class="num">5</span>지급일정</h2><div class="notice"><strong>2026년 9~10월분 체재비</strong><br>월 마지막 주인 <strong>2026년 8월 26일</strong>에 입금될 수 있도록, <strong>2026년 8월 20일까지 전표 처리를 완료</strong>해야 합니다.</div><div class="welcome" style="margin-top:14px;margin-bottom:0"><p class="hello">꼭 부탁드려요! 🙏</p><p>제가 그때까지 돌아오지 않는다면, 대신 장기파견자 체재비 전표 처리를 부탁드립니다!!!!</p></div></section>
+        <section class="section" id="long-checklist"><h2><span class="num">6</span>업무 완료 체크리스트</h2><div class="checks"><label class="check"><input type="checkbox">최근 FM·PAO 시트 각각 복사</label><label class="check"><input type="checkbox">2개월분 일수 확인 및 입력</label><label class="check"><input type="checkbox">FM·PAO 시트 PDF 추출</label><label class="check"><input type="checkbox">167번·7번 기안 첨부</label><label class="check"><input type="checkbox">지급일정에 맞춰 전표 처리</label><label class="check"><input type="checkbox">전표 정리 및 엑셀 정리</label></div><div class="actions"><button type="button" onclick="window.print()">인쇄·PDF 저장</button><button class="secondary" type="button" onclick="resetChecks()">체크 초기화</button></div></section>
+      </div>
+    </div>
+    <div class="subpanel" id="insurance-panel"><div class="placeholder"><div class="emoji">🛡️</div><h2>보험 가입 및 지출 처리</h2><p>여행자보험과 SOS 보험 가입 방법이 들어갈 예정입니다.</p></div></div>
+    <div class="subpanel" id="travel-goods-panel"><div class="placeholder"><div class="emoji">🎁</div><h2>출장 시 지참 물품 구매</h2><p>현지 행사에 가져갈 필요물품의 선정, 판촉사랑 주문 및 지출 처리 방법이 들어갈 예정입니다.</p></div></div>
+    </div>
+
+    <div class="tab-panel" id="accounting-panel" role="tabpanel"><div class="placeholder"><div class="emoji">🧾</div><h2>지출 처리·회계자료 정리</h2><p>전체 지출 처리, 해외매출 내역 수령, 엑셀 및 전표 정리 방법이 들어갈 예정입니다.</p></div></div>
+    <div class="tab-panel" id="local-panel" role="tabpanel"><div class="placeholder"><div class="emoji">💳</div><h2>현지 지출</h2><p>현지 현금건과 카드건의 처리 방법이 들어갈 예정입니다.</p></div></div>
+    <div class="tab-panel" id="report-panel" role="tabpanel">
+      <div class="subnav" aria-label="예산 및 일정 세부업무"><button class="subtab active" type="button" onclick="showReportTab('budget-report',this)">보고서 예산</button><button class="subtab" type="button" onclick="showReportTab('schedule-reminder',this)">주요 일정</button></div>
+      <div class="report-subpanel active" id="budget-report"><div class="placeholder"><div class="emoji">📊</div><h2>보고서 예산 작성</h2><p>보고서 예산 부분 작성방법이 들어갈 예정입니다.</p></div></div>
+      <div class="report-subpanel" id="schedule-reminder">
+        <div class="manual-title"><small>업무 일정 · 2026년 7~8월</small><h2>확인해야 하는 주요 일정</h2><p>7월 지출내역과 8월 전표 마감·체재비 지급일을 달력에서 확인합니다.</p></div>
+        <section class="section">
+          <h2>2026년 7월</h2>
+          <div class="calendar" aria-label="2026년 7월 달력"><div class="calendar-head"><div>일</div><div>월</div><div>화</div><div>수</div><div>목</div><div>금</div><div>토</div></div><div class="calendar-grid">
+            <div class="day muted"><span class="date">28</span></div><div class="day muted"><span class="date">29</span></div><div class="day muted"><span class="date">30</span></div><div class="day"><span class="date">1</span></div><div class="day"><span class="date">2</span></div><div class="day"><span class="date">3</span></div><div class="day"><span class="date">4</span></div>
+            <div class="day"><span class="date">5</span></div><div class="day"><span class="date">6</span></div><div class="day"><span class="date">7</span></div><div class="day"><span class="date">8</span></div><div class="day"><span class="date">9</span></div><div class="day"><span class="date">10</span></div><div class="day"><span class="date">11</span></div>
+            <div class="day"><span class="date">12</span></div><div class="day"><span class="date">13</span></div><div class="day"><span class="date">14</span></div><div class="day"><span class="date">15</span></div><div class="day"><span class="date">16</span></div><div class="day"><span class="date">17</span></div><div class="day"><span class="date">18</span></div>
+            <div class="day"><span class="date">19</span></div><div class="day"><span class="date">20</span></div><div class="day"><span class="date">21</span></div><div class="day"><span class="date">22</span></div><div class="day"><span class="date">23</span></div><div class="day"><span class="date">24</span></div><div class="day"><span class="date">25</span></div>
+            <div class="day"><span class="date">26</span></div><div class="day"><span class="date">27</span></div><div class="day"><span class="date">28</span></div><div class="day"><span class="date">29</span></div><div class="day"><span class="date">30</span></div><div class="day"><span class="date">31</span><span class="event">7월 카드건 증빙 수합</span></div><div class="day muted"><span class="date">1</span></div>
+          </div></div>
+
+          <h2 style="margin-top:34px">2026년 8월</h2>
+          <div class="calendar" aria-label="2026년 8월 달력"><div class="calendar-head"><div>일</div><div>월</div><div>화</div><div>수</div><div>목</div><div>금</div><div>토</div></div><div class="calendar-grid">
+            <div class="day muted"><span class="date">26</span></div><div class="day muted"><span class="date">27</span></div><div class="day muted"><span class="date">28</span></div><div class="day muted"><span class="date">29</span></div><div class="day muted"><span class="date">30</span></div><div class="day muted"><span class="date">31</span></div><div class="day"><span class="date">1</span></div>
+            <div class="day"><span class="date">2</span></div><div class="day deadline"><span class="date">3</span><span class="event">7월 국내 카드건 완료</span></div><div class="day"><span class="date">4</span></div><div class="day"><span class="date">5</span></div><div class="day deadline"><span class="date">6</span><span class="event">단기 체재비 전표</span></div><div class="day"><span class="date">7</span></div><div class="day"><span class="date">8</span></div>
+            <div class="day"><span class="date">9</span></div><div class="day"><span class="date">10</span></div><div class="day"><span class="date">11</span></div><div class="day payday"><span class="date">12</span><span class="event">단기 체재비 입금 목표</span></div><div class="day deadline"><span class="date">13</span><span class="event">7월 현지 카드건 완료</span></div><div class="day"><span class="date">14</span></div><div class="day"><span class="date">15</span></div>
+            <div class="day"><span class="date">16</span></div><div class="day"><span class="date">17</span></div><div class="day"><span class="date">18</span></div><div class="day"><span class="date">19</span></div><div class="day deadline"><span class="date">20</span><span class="event">장기 체재비 전표</span></div><div class="day"><span class="date">21</span><span class="event">단기파견 출발</span></div><div class="day"><span class="date">22</span></div>
+            <div class="day"><span class="date">23</span></div><div class="day"><span class="date">24</span></div><div class="day"><span class="date">25</span></div><div class="day payday"><span class="date">26</span><span class="event">장기 체재비 입금</span></div><div class="day"><span class="date">27</span></div><div class="day"><span class="date">28</span></div><div class="day"><span class="date">29</span></div>
+            <div class="day"><span class="date">30</span></div><div class="day"><span class="date">31</span></div><div class="day muted"><span class="date">1</span></div><div class="day muted"><span class="date">2</span></div><div class="day muted"><span class="date">3</span></div><div class="day muted"><span class="date">4</span></div><div class="day muted"><span class="date">5</span></div>
+          </div></div>
+          <div class="calendar-legend"><span><i class="legend-dot"></i>전표·지출 마감</span><span><i class="legend-dot pay"></i>입금 목표일</span></div>
+          <div class="notice" style="margin-top:18px"><strong>단기파견자 체재비 지급 원칙</strong><br>일정이 변경되면 실제 출발일을 기준으로 최소 1주 전에는 전문가가 체재비를 받을 수 있도록 전표를 처리합니다. 항공편이나 출장내용이 확정되지 않았다면 변경 가능성이 있음을 전문가에게 미리 안내합니다.</div><div class="welcome" style="margin-top:14px;margin-bottom:0"><p class="hello">장기파견자 체재비 꼭 부탁드려요! 🙏</p><p>제가 8월 20일까지 돌아오지 않는다면 장기파견자 체재비 전표를 대신 처리해 주세요!!!!</p></div>
+        </section>
+      </div>
+    </div>
+  </div>
+</main>
+<script>
+  function copyMessage(){
+    const node=document.getElementById('messageText').cloneNode(true);
+    node.querySelector('button').remove();
+    navigator.clipboard.writeText(node.innerText.trim()).then(()=>alert('요청 문구를 복사했습니다.'));
+  }
+  function resetChecks(){document.querySelectorAll('.check input').forEach(item=>item.checked=false)}
+  function showTab(panelId,button){
+    document.querySelectorAll('.tab-panel').forEach(panel=>panel.classList.remove('active'));
+    document.querySelectorAll('.tab-button').forEach(tab=>{tab.classList.remove('active');tab.setAttribute('aria-selected','false')});
+    document.getElementById(panelId).classList.add('active');
+    button.classList.add('active');
+    button.setAttribute('aria-selected','true');
+  }
+  function showSubtab(panelId,button){
+    const parent=button.closest('.tab-panel');
+    parent.querySelectorAll('.subpanel').forEach(panel=>panel.classList.remove('active'));
+    parent.querySelectorAll('.subtab').forEach(tab=>tab.classList.remove('active'));
+    document.getElementById(panelId).classList.add('active');
+    button.classList.add('active');
+  }
+  function showAllowanceTab(panelId,button){
+    const parent=document.getElementById('allowance-panel');
+    parent.querySelectorAll('.allowance-subpanel').forEach(panel=>panel.classList.remove('active'));
+    const nav=button.parentElement;
+    nav.querySelectorAll('.subtab').forEach(tab=>tab.classList.remove('active'));
+    document.getElementById(panelId).classList.add('active');
+    button.classList.add('active');
+  }
+  function showReportTab(panelId,button){
+    const parent=document.getElementById('report-panel');
+    parent.querySelectorAll('.report-subpanel').forEach(panel=>panel.classList.remove('active'));
+    button.parentElement.querySelectorAll('.subtab').forEach(tab=>tab.classList.remove('active'));
+    document.getElementById(panelId).classList.add('active');
+    button.classList.add('active');
+  }
+  function openCategory(panelId,subIndex){
+    const button=document.querySelector('[aria-controls="'+panelId+'"]');
+    showTab(panelId,button);
+    if(subIndex){
+      const subButtons=document.querySelectorAll('#'+panelId+' .subtab');
+      if(subButtons[subIndex-1])subButtons[subIndex-1].click();
+    }
+    window.scrollTo({top:document.querySelector('.topic-nav').offsetTop-16,behavior:'smooth'});
+  }
+</script>
+</body>
+</html>
