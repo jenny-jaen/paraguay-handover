@@ -14,6 +14,7 @@
     .hero h1{font-weight:800}
     .day.no-funds{background:#fff0f0;box-shadow:inset 0 0 0 2px #d9534f}.day.no-funds .date{background:#c83f3f;color:#fff;border-radius:50%}.day.no-funds .event{border-color:#e39b98;background:#fff;color:#a72f2b;font-weight:800}.no-funds-note{background:#fff0f0;border-left-color:#c83f3f;color:#7f2926}
     body.locked{overflow:hidden}.site-app{display:none}.site-app.unlocked{display:block}.password-gate{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;padding:24px;background:linear-gradient(135deg,#173f60,#287aa7)}.password-gate[hidden]{display:none}.gate-card{width:min(420px,100%);padding:34px;background:#fff;border-radius:20px;box-shadow:0 18px 55px rgba(10,32,49,.28);text-align:center}.gate-icon{font-size:38px}.gate-card h1{margin:8px 0 8px;font:800 25px SUIT,Pretendard,sans-serif}.gate-card p{margin:0 0 20px;color:var(--muted)}.gate-form{display:flex;gap:8px}.gate-form input{min-width:0;flex:1;border:1px solid var(--line);border-radius:10px;padding:12px 13px;font:inherit}.gate-form button{border:0;border-radius:10px;padding:12px 17px;background:var(--blue);color:#fff;font:700 14px Pretendard,sans-serif;cursor:pointer}.gate-error{min-height:24px;margin:10px 0 0!important;color:#c83f3f!important;font-size:13px}.gate-note{margin-top:14px!important;font-size:12px;color:#8795a1!important}
+    .global-search{position:relative;margin:-10px 0 28px;padding:18px;background:linear-gradient(135deg,#f4f8fb,#eaf4fa);border:1px solid var(--line);border-radius:16px}.search-label{display:block;margin-bottom:8px;font-size:14px;font-weight:700;color:var(--blue)}.search-form{display:flex;gap:8px}.search-form input{min-width:0;flex:1;padding:12px 14px;border:1px solid #afc4d3;border-radius:10px;background:#fff;color:var(--ink);font:inherit}.search-form button{border:0;border-radius:10px;padding:11px 17px;background:var(--blue);color:#fff;font:700 14px Pretendard,sans-serif;cursor:pointer}.search-help{margin:7px 0 0;color:var(--muted);font-size:12px}.search-results{display:grid;gap:8px;margin-top:12px}.search-results:empty{display:none}.search-result{width:100%;text-align:left;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);cursor:pointer}.search-result:hover{border-color:#8eb4ca;background:#fafdff}.search-result strong{display:block;color:var(--blue);font-size:14px}.search-result span{display:block;margin-top:3px;color:var(--muted);font-size:12px;line-height:1.45}.search-empty{padding:12px 14px;border-radius:10px;background:#fff;color:var(--muted);font-size:13px}.search-hit{animation:searchPulse 2.2s ease}@keyframes searchPulse{0%,100%{box-shadow:none}20%,70%{box-shadow:0 0 0 4px rgba(230,184,92,.45);border-radius:14px}}
   </style>
 </head>
 <body class="locked">
@@ -35,6 +36,7 @@
       <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="accounting-panel" onclick="showTab('accounting-panel',this)"><strong>🧾 지출·회계자료 정리</strong><span>지출 처리·해외매출 내역</span></button>
       <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="report-panel" onclick="showTab('report-panel',this)"><strong>📊 예산·일정 관리</strong><span>보고서 예산·일정 리마인드</span></button>
     </div>
+    <section class="global-search" aria-label="대시보드 업무 검색"><label class="search-label" for="dashboardSearch">🔎 궁금한 업무 검색</label><form class="search-form" id="dashboardSearchForm"><input id="dashboardSearch" type="search" placeholder="예: 체재비, 현금영수증, 판촉사랑, 해외매출" autocomplete="off"><button type="submit">검색</button></form><p class="search-help">검색 결과를 누르면 관련 탭을 열고 해당 내용으로 바로 이동합니다.</p><div class="search-results" id="dashboardSearchResults" aria-live="polite"></div></section>
 
     <div class="tab-panel active" id="overview-panel" role="tabpanel">
       <div class="welcome"><p class="hello">선생님들, 안녕하세요! 👋</p><p>제가 잠시 자리를 비우는 동안 업무를 조금 더 편하게 확인하실 수 있도록 파라과이 사업의 회계·행정 처리방법과 꼭 확인해야 할 내용을 정리해 두었습니다. 필요한 업무를 선택해서 확인해 주세요!<br><br><strong>짧기도 하고, 길기도 한… 시간이겠지만! 항상 잘해 주시는 선생님들을 믿고 마음 편히 자리 비웁니다 :)</strong><br><br>진행하시다가 필요한 내용이나 궁금한 점이 있으면 언제든 편하게 연락 주세요 😊</p></div>
@@ -384,6 +386,76 @@ SOS 가입신청서, 한동대학교 산학협력단 사업자등록증 및 날�
     }
     window.scrollTo({top:document.querySelector('.topic-nav').offsetTop-16,behavior:'smooth'});
   }
+  function activateSearchTarget(target){
+    const mainPanel=target.closest('.tab-panel');
+    if(mainPanel){
+      const mainButton=document.querySelector('[aria-controls="'+mainPanel.id+'"]');
+      if(mainButton)showTab(mainPanel.id,mainButton);
+    }
+    const expertSubpanel=target.closest('.subpanel');
+    if(expertSubpanel){
+      const button=[...document.querySelectorAll('#expert-panel > .subnav .subtab')].find(item=>(item.getAttribute('onclick')||'').includes("'"+expertSubpanel.id+"'"));
+      if(button)showSubtab(expertSubpanel.id,button);
+    }
+    const allowancePanel=target.closest('.allowance-subpanel');
+    if(allowancePanel){
+      const button=[...document.querySelectorAll('#allowance-panel .subnav .subtab')].find(item=>(item.getAttribute('onclick')||'').includes("'"+allowancePanel.id+"'"));
+      if(button)showAllowanceTab(allowancePanel.id,button);
+    }
+    const accountingPanel=target.closest('.accounting-subpanel');
+    if(accountingPanel){
+      const button=[...document.querySelectorAll('#accounting-panel > .subnav .subtab')].find(item=>(item.getAttribute('onclick')||'').includes("'"+accountingPanel.id+"'"));
+      if(button)showAccountingTab(accountingPanel.id,button);
+    }
+    const reportPanel=target.closest('.report-subpanel');
+    if(reportPanel){
+      const button=[...document.querySelectorAll('#report-panel > .subnav .subtab')].find(item=>(item.getAttribute('onclick')||'').includes("'"+reportPanel.id+"'"));
+      if(button)showReportTab(reportPanel.id,button);
+    }
+    setTimeout(()=>{
+      target.scrollIntoView({behavior:'smooth',block:'start'});
+      target.classList.remove('search-hit');
+      void target.offsetWidth;
+      target.classList.add('search-hit');
+      setTimeout(()=>target.classList.remove('search-hit'),2300);
+    },80);
+  }
+  function runDashboardSearch(){
+    const input=document.getElementById('dashboardSearch');
+    const results=document.getElementById('dashboardSearchResults');
+    const query=input.value.trim().toLocaleLowerCase('ko-KR');
+    results.replaceChildren();
+    if(!query)return;
+    const candidates=[...document.querySelectorAll('#siteApp .manual-title, #siteApp .section')];
+    const matches=candidates.filter(node=>node.innerText.toLocaleLowerCase('ko-KR').includes(query)).slice(0,12);
+    if(!matches.length){
+      const empty=document.createElement('div');
+      empty.className='search-empty';
+      empty.textContent='검색 결과가 없습니다. 다른 단어로 검색해 주세요.';
+      results.appendChild(empty);
+      return;
+    }
+    matches.forEach(node=>{
+      const text=node.innerText.replace(/\s+/g,' ').trim();
+      const lower=text.toLocaleLowerCase('ko-KR');
+      const pos=Math.max(0,lower.indexOf(query));
+      const start=Math.max(0,pos-34);
+      const snippet=(start>0?'…':'')+text.slice(start,start+110)+(text.length>start+110?'…':'');
+      const heading=node.querySelector('h2,h3');
+      const button=document.createElement('button');
+      button.type='button';
+      button.className='search-result';
+      const title=document.createElement('strong');
+      title.textContent=heading?heading.innerText.replace(/^\d+\s*/,'').trim():'관련 업무';
+      const summary=document.createElement('span');
+      summary.textContent=snippet;
+      button.append(title,summary);
+      button.addEventListener('click',()=>activateSearchTarget(node));
+      results.appendChild(button);
+    });
+  }
+  document.getElementById('dashboardSearchForm').addEventListener('submit',event=>{event.preventDefault();runDashboardSearch()});
+  document.getElementById('dashboardSearch').addEventListener('input',event=>{if(!event.target.value.trim())document.getElementById('dashboardSearchResults').replaceChildren()});
 </script>
 </body>
 </html>
